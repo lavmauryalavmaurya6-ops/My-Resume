@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 7 Landing Page</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: sans-serif; }
+
+/* 7.1 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0f172a;
+  color: pink;
+}
+.logo { font-weight: bold; font-size: 22px; }
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.menu a { color: lightgreen; text-decoration: none; }
+.menu button { padding: 8px 15px; background: #38bdf8; border: none; border-radius: 5px; cursor: pointer; }
+
+/* 7.2 BANNER - centered with flexbox */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background: #e0e7ff;
+  text-align: center;
+}
+.banner h1 { font-size: 40px; margin-bottom: 10px; }
+.banner p { margin-bottom: 15px; }
+
+/* 7.3 CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+.card {
+  flex: 1 1 200px;
+  max-width: 280px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: lightcoral;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar + Banner together like landing page - 7.4 -->
+<nav class="navbar">
+  <div class="logo">Lav Maurya</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <button>Login</button>
+  </div>
+</nav>
+
+<div class="banner">
+  <h1>Lrean Web Development</h1>
+  <p>Start From Zero, Build Real Projects</p>
+  <button style="padding:10px 20px;">Get started</button>
+</div>
+
+<div class="cards">
+  <div class="card"><h3>HTML</h3><p>stucture of website</p></div>
+  <div class="card"><h3>CSS</h3><p>style and design</p></div>
+  <div class="card"><h3>JavaScript</h3><p>logic of website</p></div>
+  <div class="card"><h3>Git</h3><p>Save your work</p></div>
+</div>
+
+</body>
+</html>
